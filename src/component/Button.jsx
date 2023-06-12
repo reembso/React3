@@ -1,9 +1,10 @@
 export default function Button(props) {
-    const {style,text} = props
+    const {color,onClick} = props
   return (
     <div>
-      <button  style = {style} >
-      {text }
+      <button  style = {{backgroundColor:color}} 
+      onClick={onClick} >
+      {color} 
         </button>
     </div>
   )
